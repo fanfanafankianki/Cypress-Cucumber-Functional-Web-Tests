@@ -1,0 +1,28 @@
+{
+  "name": "Cypress, Typescript and Cucumber Web Tests",
+  "version": "1.0.0",
+  "description": "Sci-hub.se Web Example Tests made with Cypress, Typescript and Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "typescript",
+  "tests"],
+
+  "author": "fanfanafankianki",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^6.6.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
