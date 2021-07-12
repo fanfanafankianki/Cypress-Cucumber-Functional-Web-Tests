@@ -19,6 +19,10 @@ class BasePage {
 
     header2_menu: () => cy.get("#nav-hamburger-menu"),
     header2_menu_open: () => cy.get("#hmenu-content"),
+    header2_menu_open_alexa: () => cy.get("[data-ref-tag='nav_em_1_1_1_2']"),
+    header2_menu_open_alexa_echo: () => cy.get("[href='/gp/browse.html?node=22832478031&ref_=nav_em_echo_speakers_0_2_2_2']"),
+    header2_menu_open_sport: () => cy.get("[data-ref-tag='nav_em_1_1_1_10']"),
+    header2_menu_open_sport_bieganie: () => cy.get("[href='/gp/browse.html?node=20859830031&ref_=nav_em_sp_running_0_2_10_9']"),
     header2_okazje: () => cy.get("[data-csa-c-slot-id='nav_cs_0']"),
     header2_bestsellery: () => cy.get("[data-csa-c-slot-id='nav_cs_1']"),
     header2_karty: () => cy.get("[data-csa-c-slot-id='nav_cs_2']"),

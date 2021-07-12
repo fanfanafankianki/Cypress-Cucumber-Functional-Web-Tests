@@ -5,8 +5,8 @@ export class HelpPage extends BasePage{
         
     }
     elements = {
-        content: () => cy.get(".a-row")
-
+        content: () => cy.get(".a-row"),
+        tracking: () => cy.get(":nth-child(1) > .a-size-medium > .a-link-normal")
     }
 
     help_content_is_visible() {

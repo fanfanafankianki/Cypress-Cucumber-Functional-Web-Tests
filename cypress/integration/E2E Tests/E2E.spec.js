@@ -84,4 +84,33 @@ describe("Amazon Web Tests", function () {
         registerpage.elements.continue().click();
         cy.title().should('include', 'Potwierd');
     })
+
+    it("Try to go to 'Echo i Alexa' -> 'Inteligentne głośniki' through hamburger menu", () =>{
+        cy.visit("https://www.amazon.pl/");
+        cy.get('#sp-cc-accept').click();
+        basepage.click_header2_menu();
+        basepage.elements.header2_menu_open().should('be.visible');
+        basepage.elements.header2_menu_open_alexa().should('be.visible').click();
+        basepage.elements.header2_menu_open_alexa_echo().should('be.visible').click();
+        cy.title().should('include', 'Inteligentne');
+    })
+
+    it("Try to go to 'Dział obługi klienta' and write 'Paczki' in search input and press enter", () =>{
+        cy.visit("https://www.amazon.pl/");
+        cy.get('#sp-cc-accept').click();
+        basepage.click_header2_dzialobslugi();
+        cy.title().should('include', 'Pomoc')
+        cy.get('#helpsearch').type('Paczki {enter}')
+        helppage.elements.tracking().should('be.visible')
+    })
+
+    it("Try to go to 'Sport i Turystyka' -> 'Bieganie' through hamburger menu", () =>{
+        cy.visit("https://www.amazon.pl/");
+        cy.get('#sp-cc-accept').click();
+        basepage.click_header2_menu();
+        basepage.elements.header2_menu_open().should('be.visible');
+        basepage.elements.header2_menu_open_sport().should('be.visible').click();
+        basepage.elements.header2_menu_open_sport_bieganie().should('be.visible').click();
+        cy.title().should('include', 'Bieganie');
+    })
 })
