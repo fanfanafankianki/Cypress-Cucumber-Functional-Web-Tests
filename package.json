@@ -1,7 +1,7 @@
 {
   "name": "Cypress, Typescript and Cucumber Web Tests",
   "version": "1.0.0",
-  "description": "Sci-hub.se Web Example Tests made with Cypress, Typescript and Cucumber.",
+  "description": "Amazon.pl Web Example Tests made with Cypress, Typescript and Cucumber.",
   "main": "index.js",
   "scripts": {
     "test": "cypress run --spec \"**/*.feature\"",
@@ -16,10 +16,18 @@
   "author": "fanfanafankianki",
   "license": "MIT",
   "dependencies": {
+    "@cypress/webpack-preprocessor": "^5.9.1",
     "cucumber": "^7.0.0-rc.0",
-    "cypress": "^7.4.0"
+    "cypress": "^7.4.0",
+    "polyfills": "^2.1.1",
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.44.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
     "cypress-cucumber-preprocessor": "^4.1.2",
     "typescript": "^4.3.2"
   },

@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 class BasePage {
+  
   elements = {
     ////////////////////////////////
     ///Header Locators
@@ -17,6 +18,7 @@ class BasePage {
     header1_cart: () => cy.get("#nav-cart"),
 
     header2_menu: () => cy.get("#nav-hamburger-menu"),
+    header2_menu_open: () => cy.get("#hmenu-content"),
     header2_okazje: () => cy.get("[data-csa-c-slot-id='nav_cs_0']"),
     header2_bestsellery: () => cy.get("[data-csa-c-slot-id='nav_cs_1']"),
     header2_karty: () => cy.get("[data-csa-c-slot-id='nav_cs_2']"),
@@ -112,6 +114,9 @@ class BasePage {
   ///Header2 clicks
   click_header2_menu() {
     this.elements.header2_menu().click();
+  }
+  click_header2_menu_open() {
+    this.elements.header2_menu_open().click();
   }
   click_header2_okazje() {
     this.elements.header2_okazje().click();
