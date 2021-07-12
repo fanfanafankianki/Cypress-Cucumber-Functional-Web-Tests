@@ -5,7 +5,8 @@ export class ResultsPage extends BasePage{
         
     }
     elements = {
-        content: () => cy.get("#a-page")
+        content: () => cy.get("#a-page"),
+        results: () => cy.get(".a-color-state")
     }
 
     results_content_is_visible() {

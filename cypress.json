@@ -2,7 +2,7 @@
 
 "watchForFileChanges":true,
 "pluginsFile": "cypress/plugins/index.js",
-"testFiles": "**/*.{feature,features}",
+"testFiles": "**/*.{feature,features,spec.js}",
 "supportFile": "cypress/support/index.js"
 
 }

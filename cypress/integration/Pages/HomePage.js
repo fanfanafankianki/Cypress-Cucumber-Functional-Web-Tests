@@ -5,7 +5,8 @@ export class HomePage extends BasePage{
         
     }
     elements = {
-        content: () => cy.get("#pageContent")
+        content: () => cy.get("#pageContent"),
+        register: () => cy.get(".sign-in-tooltip-link")
     }
 
     content_is_visible() {
