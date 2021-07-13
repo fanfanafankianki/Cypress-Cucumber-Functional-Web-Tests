@@ -1,2 +1,2 @@
 # Cypress-Cucumber-Web-Tests
-Example BDD and E2E tests of the web made with Cypress and Cucumber.
+Example BDD tests made with Cucumber and Gherkin language and E2E Cypress tests of the web.
